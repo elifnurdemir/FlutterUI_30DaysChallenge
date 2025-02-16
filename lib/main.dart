@@ -11,9 +11,21 @@ class HomePage extends StatelessWidget {
           Stack(
             children: [
               SizedBox(
-                height:MediaQuery.of(context).size.height,
+                height: MediaQuery.of(context).size.height / 1.5,
                 width: MediaQuery.of(context).size.width,
-                child: Image.asset('assets/img/avatars.jpg',fit: BoxFit.fill,),
+                child: Image.asset('assets/img/avatars.jpg', fit: BoxFit.fill),
+              ),
+              Positioned(
+                top: 100,
+                left: 170,
+                child: Text(
+                  'LOGIN',
+                  style: TextStyle(
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
               ),
             ],
           ),
