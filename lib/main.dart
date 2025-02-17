@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test_1/day1.dart';
 import 'package:flutter_test_1/day2.dart';
+import 'package:flutter_test_1/day3.dart';
 
 void main() {
   runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: VerticalListViewBuilder(),
-    ),
+    MaterialApp(debugShowCheckedModeBanner: false, home: GridViewGallery()),
   );
 }
 
