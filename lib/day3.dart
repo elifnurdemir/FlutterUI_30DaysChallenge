@@ -20,12 +20,15 @@ class GridViewGallery extends StatelessWidget {
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2, // her bir satırda 2 item
             crossAxisSpacing: 2.0, // yatayda aralık
-            mainAxisExtent: 10.0, //dikeyde aralık
+            mainAxisSpacing: 10.0, //dikeyde aralık
             childAspectRatio: 1,
           ),
           itemCount: images.length,
           itemBuilder: (context, index) {
-            return ClipRRect(borderRadius: BorderRadius.circular(15.0));
+            return ClipRRect(
+              borderRadius: BorderRadius.circular(15.0),
+              child: Image.network(images[index], fit: BoxFit.cover),
+            );
           },
         ),
       ),
