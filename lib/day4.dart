@@ -72,9 +72,7 @@ class LoginPage extends StatelessWidget {
                     //Login Button
                     const SizedBox(height: 30.0),
                     GestureDetector(
-                      onTap: () {
-                        print('Clicked button');
-                      },
+                      onTap: () {},
                       child: Container(
                         width: MediaQuery.of(context).size.width,
                         padding: const EdgeInsets.symmetric(
