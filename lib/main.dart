@@ -2,19 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test_1/day1.dart';
 import 'package:flutter_test_1/day2.dart';
 import 'package:flutter_test_1/day3.dart';
+import 'package:flutter_test_1/day4.dart';
+import 'package:flutter_test_1/day5.dart';
 
 void main() {
   runApp(
-    MaterialApp(debugShowCheckedModeBanner: false, home: GridViewGallery()),
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: ValidatedLoginPage(),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black),
+      ),
+    ),
   );
-}
-
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Home Page")),
-      body: Center(child: Text("Welcome to Flutter")),
-    );
-  }
 }

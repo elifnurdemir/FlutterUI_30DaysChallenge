@@ -21,7 +21,7 @@ class GridViewGallery extends StatelessWidget {
             crossAxisCount: 2, // her bir satırda 2 item
             crossAxisSpacing: 2.0, // yatayda aralık
             mainAxisSpacing: 10.0, //dikeyde aralık
-            childAspectRatio: 1,
+            childAspectRatio: 0.6,
           ),
           itemCount: images.length,
           itemBuilder: (context, index) {
